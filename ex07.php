@@ -7,3 +7,12 @@
 //   fact *= i
 // afficher fact
 
+
+$factNumber = intval($_GET['factor']);
+$fact = 1;
+
+for ($i = 0; $i < $factNumber; $i++) {
+    $fact *= $i+1;
+}
+
+echo $fact;

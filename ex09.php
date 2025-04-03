@@ -8,3 +8,6 @@
 // sinon
 //   afficher 'non'
 
+$stringURL = $_GET["s"];
+
+echo strtolower(strrev($stringURL)) === strtolower($stringURL) ? "palindrome" : "non";

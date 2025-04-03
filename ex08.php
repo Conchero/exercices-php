@@ -6,3 +6,7 @@
 //   concaténer caractère à une nouvelle chaîne
 // afficher la nouvelle chaîne
 
+$stringURL = $_GET["s"];
+
+
+echo gettype($stringURL) === gettype(" ") ? strrev($stringURL) : "Please enter a string";

@@ -7,3 +7,7 @@
 // sinon
 //   afficher 'impair'
 
+$nombre = $_GET['number'];
+
+
+echo $nombre%2 === 0 ? "pair" : "impair"; 

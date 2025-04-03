@@ -8,3 +8,16 @@
 //   n = n // 10
 // afficher somme
 
+$numberURL = $_GET["number"];
+
+$splittedNumber = str_split($numberURL);
+
+$somme = 0;
+foreach ($splittedNumber as $number) {
+    if (intval($number))
+    {
+        $somme += $number;
+    }
+}
+
+echo $somme;
